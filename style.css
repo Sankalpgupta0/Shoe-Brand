@@ -1,0 +1,155 @@
+@keyframes slideOut {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideIn {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes shrink {
+    0% {
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+    100% {
+        background-size: 70% 70%;
+        background-position: center center;
+    }
+}
+@keyframes expand {
+    0% {
+        background-size: 70% 70%;
+        background-position: center center;
+    }
+    100% {
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+}
+@keyframes moveRight {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes moveLeft {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.page{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pg1{
+    background-color: #9B89C5;
+    z-index: 3;
+    opacity: 1;
+}
+.pg2{
+    background-color: #D7A594;
+    z-index: 2;
+    opacity: 1;
+}
+.pg3{
+    background-color: #9FA051;
+    z-index: 1;
+    opacity: 1;
+}
+.con{
+    height: 100vh;
+    width: 100vw;
+}
+.c1{
+    background-image: url(req/puma.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c2{
+    background-image: url(req/yeeze.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c3{
+    background-image: url(req/nike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-weight: bolder;
+    font-size: 7vw;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+    text-shadow: 4px 4px 7px #000000;
+}
+
+button{
+    height: 13vw;
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 3vw;
+    border: none;
+    color: white;
+    text-shadow: 4px 4px 7px #000000;
+    top: 50%;
+}
+.right{
+    position: absolute;
+    right: 0vw;
+}
+.left{
+    position: absolute;
+    left: 0vw;
+}
+.fa-circle{
+    font-size: 8vw;
+}
+.fa-arrow-right{
+    position: absolute;
+    right: 10vw;
+}
+.fa-arrow-left{
+    position: absolute;
+    left: 10vw;
+}
+/* .fa-arrow-right:hover{
+    animation: moveRight 1s;
+}   */
